@@ -1,5 +1,7 @@
 # ORBIS AI
 
+Demo : https://orbis-ai-lavanyasaxena.vercel.app/
+
 ORBIS AI is a climate-intelligence dashboard for exploring environmental
 conditions and potential climate-related impacts across selected regions. It
 brings regional context, satellite imagery, environmental indicators, risk
