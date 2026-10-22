@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, -apple-system, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    /* ORBIS AI climate-tech palette */
+    --aeris-bg: #F4F6F2;          /* warm off-white / light gray-green */
+    --aeris-card: #FFFFFF;
+    --aeris-border: #E3E9E3;
+    --aeris-text: #1B2520;        /* very dark charcoal */
+    --aeris-muted: #5D6E64;       /* muted slate gray-green */
+    --aeris-forest: #1E5641;      /* deep forest green (primary) */
+    --aeris-forest-dark: #15402F;
+    --aeris-forest-tint: #E9F2EC;
+    --aeris-sage: #87A796;        /* muted sage / eucalyptus */
+    --aeris-danger: #C2410C;
+    --aeris-red: #B3261E;
+    --aeris-amber: #B45309;
+    --aeris-green: #1D7A46;
+    --aeris-water: #2563EB;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--aeris-bg);
+    color: var(--aeris-text);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Quiet, light scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD6CD;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A9BBAF;
+}
+
+/* Leaflet light theme customizations */
+.leaflet-container {
+  background-color: #E9EDE7 !important;
+  font-family: var(--font-sans) !important;
+}
+
+.leaflet-bar a {
+  background-color: #FFFFFF !important;
+  color: #1B2520 !important;
+  border-color: #E3E9E3 !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #F0F5F0 !important;
+  color: #1E5641 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #1B2520 !important;
+  border: 1px solid #E3E9E3;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px -8px rgba(27, 37, 32, 0.18) !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+  border: 1px solid #E3E9E3;
+}
+
+.leaflet-tooltip.aeris-map-tooltip {
+  background: #FFFFFF !important;
+  color: #1B2520 !important;
+  border: 1px solid #E3E9E3 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px -4px rgba(27, 37, 32, 0.16) !important;
+  font-family: var(--font-sans) !important;
+  font-size: 12px !important;
+  font-weight: 500;
+}
+
+/* Subtle range input styling for simulators */
+input[type='range'].aeris-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #E3E9E3;
+  outline: none;
+}
+
+input[type='range'].aeris-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #1E5641;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(27, 37, 32, 0.25);
+  cursor: pointer;
+}
+
+input[type='range'].aeris-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #1E5641;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(27, 37, 32, 0.25);
+  cursor: pointer;
+}
+
+/* Print: reports should look like a clean document */
+@media print {
+  body {
+    background: #FFFFFF !important;
+  }
+}

@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output and test coverage
+build/
+dist/
+coverage/
+
+# Local tool caches and deployment output
+.vercel/
+.vite/
+.turbo/
+.cache/
+
+# Environment files and secrets
+.env*
+!.env.example
+
+# Logs and local debug output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript and lint caches
+*.tsbuildinfo
+.eslintcache
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor swap and temporary files
+*.swp
+*.swo
+*.tmp
+*.temp

@@ -1,0 +1,8 @@
+{
+  "name": "ORBIS AI - Earth Observation Intelligence for Climate Action",
+  "description": "Adaptive Earth Observation Reasoning & Intelligence System for Climate Action. Multimodal satellite change detection, flood intelligence, NDVI vegetation health, NDWI water analysis, and transparent climate risk assessment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
